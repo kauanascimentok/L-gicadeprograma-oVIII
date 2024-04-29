@@ -1,21 +1,16 @@
 <script>
-var idade = prompt("insira sua idade")
-var ask = prompt("está na lista de convidados?")
-
-
-if (idade >= 18 && ask == "sim") {
-alert("acesso concedido!")
-} 
-else if (idade < 18 && ask == "nao") {
-alert("Desculpe, você não pode acessar a festa.") 
-} 
-
-else if (idade < 18 && ask == "sim") {
-alert("Desculpe, você não pode acessar a festa.") 
-}
-
-else if (idade >= 18 && ask== "nao") {
-alert("Desculpe, você não pode acessar a festa.") 
-}
-
-</script>
+    function verificarNumeros() {
+        var num1 = prompt("Digite o primeiro número:");
+        var num2 = prompt("Digite o segundo número:");
+    
+        var soma = num1 + num2;
+    
+        if (soma > 100 && num1 > num2) {
+            document.write("A soma dos números é maior que 100 e o primeiro número é maior que o segundo.");
+        } else {
+            document.write("A soma dos números não é maior que 100 ou o primeiro número não é maior que o segundo.");
+        }
+    }
+    
+    verificarNumeros();
+    </script>
